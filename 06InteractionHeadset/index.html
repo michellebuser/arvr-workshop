@@ -8,7 +8,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: #333">
       <a-assets>
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
@@ -21,9 +21,9 @@
         </a-entity>
         <a-ring id="cursorRing" 
           position="0 0 -1"
-          radius-inner= "0.02"
-          radius-outer= "0.03"
-          material="color: red; shader: flat">
+          radius-inner= "0.04"
+          radius-outer= "0.10"
+          material="color: pink; shader: flat">
         </a-ring>
       </a-camera>
       
@@ -38,13 +38,13 @@
         animation__mouseenter="
           property: components.material.material.color; 
           type: color; 
-          to: blue; 
+          to: orange; 
           startEvents: mouseenter; 
           dur: 500;"
         animation__mouseleave="
           property: components.material.material.color; 
           type: color; 
-          to: red; 
+          to: violet; 
           startEvents: mouseleave; 
           dur: 500;">  
       </a-box>
